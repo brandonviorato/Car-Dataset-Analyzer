@@ -1,0 +1,124 @@
+/* 
+    This is a stylesheet for a. interactive 
+    web page that displays information
+    about cars from a dataset
+
+    Author: Brandon Viorato
+    Date: 2/27/2023
+    File: styles.css
+*/
+:root {
+    /* colors */
+    --grey: rgba(86, 100, 109, 0.4);
+    --text-shadow: rgba(169, 169, 169, .8);
+    --background-image: url("../images/img1.jpg");
+    --background-color: snow;
+    --button-bg-color: whitesmoke;
+    --button-border-color: lightgray;
+    --button-text-color: dimgray;
+    --hover-border-color: pink;
+    
+    /* sizes */
+    --column-padding: 10%;
+    --border-width: 3px;
+    --border-radius: 5px;
+    --font-size: 14px;
+    --margin: 4px 2px;
+}
+    
+    /* layout logic */
+body {
+    text-shadow: 1px 1px var(--text-shadow);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: var(--background-image);
+    color: var(--background-color);
+    display: grid;
+    width: 1000px;
+    margin: auto;
+    padding-top: 8%;
+    grid-template-columns: 1fr 1fr;
+}
+    
+    /* your styles go here... */
+    
+    /* styling script generated values */
+#totalRecords, #combinedMPG, #highestMPG, #lowestMPG, #mostPowerMake, #mostPower, #mostMake, #entries {
+    text-decoration: underline;
+}
+
+    /* left column styles */
+h1 {
+    text-decoration: underline;
+}
+
+#left-column {
+    background: var(--grey);
+    border-top: var(--border-width) solid black;
+    border-left: var(--border-width) solid black;
+    border-bottom: var(--border-width) solid black;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    padding-top: 0%;
+    padding-left: var(--column-padding);
+    padding-bottom: 10%;
+}
+    
+    /* right column styles */
+#right-column {
+    background: var(--grey);
+    border-top: var(--border-width) solid black;
+    border-right: var(--border-width) solid black;
+    border-bottom: var(--border-width) solid black;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    padding-top: 0%;
+    padding-left: var(--column-padding);
+    padding-right: var(--column-padding);
+    padding-bottom: 10%;
+}
+    
+ul {
+    list-style: square;
+    padding-left: 15px;
+}
+
+li {
+    margin: 10px;
+}
+
+    /* button styles */
+button:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+    
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#previous {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 3px;
+    color: var(--button-text-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size);
+    margin: var(--margin);
+}
+    
+#next {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 3px;
+    color: var(--button-text-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size);
+    margin: var(--margin);
+    padding-left: 18.9px;
+    padding-right: 18.9px;
+}

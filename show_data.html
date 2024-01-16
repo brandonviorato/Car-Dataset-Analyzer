@@ -1,0 +1,74 @@
+<!-- 
+    This is an interactive web page that displays information
+    about cars from a dataset
+
+    Author: Brandon Viorato
+    Date: 2/27/2023
+    File: show_data.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Dataset</title>
+
+        <!-- styles for the page... -->
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <!-- reference the script with your JS array here... -->
+        <script src="scripts/dataset.js"></script>
+    </head>
+    <body>
+        <main id="left-column">
+            <h1>Car Dataset</h1>
+            <p>This website allows you to view information about a list of <span id="totalRecords">Value</span> different cars.</p>
+            <div>
+                <section>
+                    <label>Make & Model:</label>
+                    <span id="makeAndModel">Value</span>
+                </section>
+                <section>
+                    <label>Engine:</label>
+                    <span id="engine">Value</span>
+                </section>
+                <section>
+                    <label>Driveline:</label>
+                    <span id="driveline">Value</span>
+                </section>
+                <section>
+                    <label>Transmission:</label>
+                    <span id="transmission">Value</span>
+                </section>
+                <section>
+                    <label>City MPG:</label>
+                    <span id="mpgCity">Value</span>
+                </section>
+                <section>
+                    <label>Highway MPG:</label>
+                    <span id="mpgHighway">Value</span>
+                </section>
+                <section>
+                    <label>Fuel Type:</label>
+                    <span id="fuelType">Value</span>
+                </section>
+                <section>
+                    <button id="previous">Previous</button>
+                    <button id="next">Next</button>
+                </section>
+            </div>
+        </main>
+        <aside id="right-column">
+            <h2>Here are some interesting facts in my dataset!</h2>
+            <ul>
+                <li>The average combined MPG is <span id="combinedMPG">Value</span></li>
+                <li>The highest combined MPG is <span id="highestMPG">Value</span></li>
+                <li>The lowest combined MPG is <span id="lowestMPG">Value</span></li>
+                <li>The most powerful cars are <span id="mostPowerMake">Value</span>, with an average of <span id="mostPower">Value</span> horsepower per vehicle</li>
+                <li>The make with the most entries is <span id="mostMake">Value</span> with <span id="entries">Value</span> entries</li>
+            </ul>
+        </aside>
+
+        <!-- reference the script with program behavior here... -->
+        <script src="scripts/program_behavior.js"></script>
+    </body>
+</html>
